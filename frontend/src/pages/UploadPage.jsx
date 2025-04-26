@@ -1,5 +1,6 @@
 import React from 'react';
 import FileUpload from '../components/FileUpload';
+import Navbar from "../components/NavBar.jsx";
 
 function UploadPage() {
   // Hardcode a sample classId for now or get it from URL params
@@ -7,8 +8,11 @@ function UploadPage() {
 
   return (
     <div>
-      <h1>Upload Assignments</h1>
-      <FileUpload classId={classId} />
+      <Navbar />
+      <div>
+        <h1>Upload Assignments</h1>
+        <FileUpload classId={classId} />
+      </div>
     </div>
   );
 }
