@@ -16,9 +16,9 @@ const upload = multer({ storage });
 
 // POST /api/classes/create
 router.post('/create', async (req, res) => {
-  const { title, description, objectives } = req.body;
+  const { title, description } = req.body;
   try {
-    const newClass = new Class({ title, description, objectives });
+    const newClass = new Class({ title, description });
     await newClass.save();
     res.json(newClass);
   } catch (error) {
