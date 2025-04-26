@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import api from '../api/api';
+import '../styles/CreateClassForm.css'; // ← import CSS file
 
 function CreateClassForm() {
   const [title, setTitle] = useState('');
@@ -13,10 +14,10 @@ function CreateClassForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="create-class-form" onSubmit={handleSubmit}>
       <input placeholder="Title" value={title} onChange={e => setTitle(e.target.value)} />
       <input placeholder="Description" value={description} onChange={e => setDescription(e.target.value)} />
-      <button type="submit">Create Class</button>
+      <button type="submit">Add Class</button>
     </form>
   );
 }

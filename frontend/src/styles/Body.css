@@ -65,6 +65,14 @@ header {
   padding: 15px 0;
 }
 
+.instructions p {
+    margin-bottom: 10px; /* small gap between each paragraph */
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-color); /* or whatever your text color is */
+  }
+  
+
 .logo {
   font-size: 2.5rem;
   font-weight: 500;
