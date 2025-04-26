@@ -14,7 +14,6 @@ function InsightsViewer({ classId }) {
 
   return (
     <div>
-      <h2>Course Insights</h2>
       <pre>{insights}</pre>
     </div>
   );

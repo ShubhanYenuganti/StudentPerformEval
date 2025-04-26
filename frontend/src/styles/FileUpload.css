@@ -1,3 +1,4 @@
+/* Center the container vertically */
 .file-upload-form {
     display: flex;
     flex-direction: column;
@@ -8,6 +9,14 @@
     border-radius: 10px;
     max-width: 500px;
     margin: 2rem auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* This will center it both horizontally and vertically */
+  }
+
+  h1 {
+    margin-top: 6rem; /* Adjust this value to move the title down */
   }
   
   .file-input-wrapper {

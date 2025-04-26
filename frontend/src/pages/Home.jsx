@@ -9,7 +9,7 @@ function Home() {
       <Navbar />
       <div className="container">
         <section>
-          <h1 className="logo">Welcome to Hack2School Course Insights!</h1>
+          <h1>Welcome to AI Course Insights!</h1>
         </section>
         <div className="instructions">
           <p>1. To start, add your classes by selecting the create button.</p>
