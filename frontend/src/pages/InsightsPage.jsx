@@ -1,5 +1,6 @@
 import React from 'react';
 import InsightsViewer from '../components/InsightsViewer';
+import NavBar from '../components/NavBar';
 
 function InsightsPage() {
   // Hardcode a sample classId for now or get it from URL params
@@ -7,8 +8,11 @@ function InsightsPage() {
 
   return (
     <div>
-      <h1>Course Insights</h1>
-      <InsightsViewer classId={classId} />
+      <NavBar />
+        <div>
+          <h1>Course Insights</h1>
+          <InsightsViewer classId={classId} />
+        </div>
     </div>
   );
 }
