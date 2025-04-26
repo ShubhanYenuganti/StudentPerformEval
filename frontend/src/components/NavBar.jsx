@@ -7,6 +7,7 @@ export default function NavBar() {
     <div className="nav-bar">
       <ul className="nav-list">
         <li className="nav-items"><Link to="/">HOME</Link></li>
+        <li className="nav-items"><Link to="/create">CREATE</Link></li>
       </ul>
     </div>
   );
