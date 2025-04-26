@@ -1,11 +1,15 @@
 import React from 'react';
 import CreateClassForm from '../components/CreateClassForm';
+import Navbar from "../components/NavBar.jsx";
 
 function CreateClassPage() {
   return (
     <div>
-      <h1>Create a Class</h1>
-      <CreateClassForm />
+      <Navbar />
+      <div>
+        <h1>Create a Class</h1>
+        <CreateClassForm />
+      </div>
     </div>
   );
 }

@@ -16,7 +16,6 @@ function CreateClassForm() {
     <form onSubmit={handleSubmit}>
       <input placeholder="Title" value={title} onChange={e => setTitle(e.target.value)} />
       <input placeholder="Description" value={description} onChange={e => setDescription(e.target.value)} />
-      <textarea placeholder="Objectives" value={objectives} onChange={e => setObjectives(e.target.value)} />
       <button type="submit">Create Class</button>
     </form>
   );
